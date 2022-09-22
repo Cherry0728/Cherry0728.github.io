@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+* {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+  text-transform: capitalize;
+}
+
+* > img {
+  user-select: none;
+  pointer-events: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: yellow;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: yellow;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.navbar {
+  /* margin-top: 1rem; */
+  display: inline-block;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+  /* padding: 0.5rem 3rem; */
+  justify-content: space-between;
+}
+
+.header {
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  /* z-index: 1000; */
+}
+
+.header .logo {
+  width: 30%;
+}
+
+.header .navbar a {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  padding: 0.2em 1em;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .navbar a:hover {
+  color: yellow;
+  background-color: black;
+}
+
+#menu-btn {
+  font-size: 5rem;
+  cursor: pointer;
+  position: sticky;
+  display: none;
+}
+
+/* ----------Start Home--------------------------------- */
+
+.main-home {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 50% 30% 40%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.home-logo {
+  width: 30rem;
+}
+.home-title {
+  font-size: 4rem;
+  text-transform: bold;
+  color: white;
+}
+.home-subtitle {
+  font-size: 2em;
+  font-weight: bold;
+  padding-right: 5em;
+}
+.phome {
+  font-size: 1.5em;
+  padding-right: 5em;
+  font-weight: bold;
+  text-align: justify;
+}
+.home-button {
+  padding: 0.3em 0.5em;
+  font-size: 2em;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  margin-left: 20px;
+}
+/* --------------CAROUSEL START--------------- */
+.border-carousel {
+  border: 10px solid yellow;
+}
+
+.main-carousel > h2 {
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+.carousel-item-custom {
+  width: 70em;
+  height: 50em;
+}
+.carousel {
+  width: 70em;
+  height: 50em;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card-text {
+  text-align: center;
+  font-size: 2em;
+}
+.btn {
+  /* display: flex; */
+  font-size: 2em;
+  text-transform: bold;
+  padding: 5px;
+  background-color: yellow;
+  margin: 30% 43%;
+  margin-top: 45%;
+}
+/* ------HOME END--------------------------- */
+
+/* ----------PHOTOBOOTH CAROUSEL START--------------------- */
+
+.border-carousel1 {
+  border: 20px solid black;
+}
+.photo-carousel {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.carousel-item-custom1 {
+  width: 100em;
+  height: 70em;
+}
+.border-carousel1 .carousel {
+  width: 100em;
+  height: 70em;
+}
+
+/* ----------PHOTOBOOTH CAROUSEL END--------------------- */
+/* -------FEARTURED START------------------------- */
+.main-featured {
+  border-bottom: 2px solid black;
+  text-align: center;
+  margin: 0 20%;
+}
+.main-featured h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+}
+.main-featured p {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* -----START NEW FEATURES -------------*/
+#main-accordion {
+  /* background-color: blue; */
+  justify-content: center;
+}
+.img360 {
+  margin: 20% 0;
+}
+.img180 {
+  margin: 40% 0;
+}
+.imgholo {
+  margin: 20% 0;
+}
+
+.new-feature {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 50%;
+  gap: 10px;
+}
+.accordion-button {
+  text-transform: capitalize;
+  font-size: 1em;
+  font-weight: bold;
+}
+.accordion-item > .img1 {
+  width: 100%;
+  height: 100%;
+}
+.pholo {
+  font-size: 1.7em;
+}
+.accordion-item > .img2 {
+  width: 100%;
+  height: 100%;
+}
+.p180 {
+  font-size: 1.7em;
+  color: white;
+}
+.accordion-item > .img3 {
+  width: 100%;
+  height: 100%;
+}
+
+.p360 {
+  font-size: 1.7em;
+}
+.new {
+  width: 50%;
+  margin: 20% 0;
+}
+.new h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+.new li {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* -----END NEW FEATURES -------------*/
+.featured-title {
+  display: grid;
+  grid-template-rows: 5% 30% 30% 30%;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 10%;
+}
+
+/* <!-----------Start props-------> */
+.other-features {
+  font-size: 3em;
+  grid-column: span 2;
+  font-weight: bold;
+  width: 100%;
+  align-self: center;
+  border: 2px solid black;
+}
+.props {
+  display: flex;
+  gap: 10em;
+  grid-column: span 2;
+  padding-top: 2%;
+  border-bottom: 2px solid black;
+}
+.props img {
+  width: 15em;
+  height: 20em;
+  /* margin-bottom: -10%; */
+  justify-items: center;
+}
+
+.props h2 {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.props p {
+  font-size: 2em;
+  text-align: justify;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 5em 0;
+  gap: 10em;
+  grid-column: span 2;
+  border-bottom: 2px solid black;
+}
+
+.layout h2,
+.layout p {
+  justify-content: flex-start;
+  /* text-align: end; */
+}
+
+.layout h2 {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.layout p {
+  font-size: 2em;
+  text-align: justify;
+}
+
+.layout img {
+  width: 70%;
+  height: 80%;
+}
+
+.backdrop {
+  display: flex;
+  gap: 10em;
+  grid-column: span 2;
+  padding: 5em 0;
+  border-bottom: 2px solid black;
+}
+.backdrop img {
+  justify-items: center;
+  width: 30em;
+  height: 20em;
+}
+
+.backdrop h2 {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.backdrop p {
+  font-size: 2em;
+  text-align: justify;
+}
+
+/* -------FEARTURED END------------------------- */
+
+/* -----------------GALLERY START---------------- */
+
+/* section.image-img {
+  display: flex;
+  width: 5px;
+} */
+/* -----------------GALLERY END---------------- */
+
+/* media queries */
+
+@media (max-width: 1500px) {
+  .header .navbar a {
+    font-size: 76%;
+  }
+
+  .carousel-item-custom {
+    width: 50em;
+    height: 30em;
+  }
+  .carousel {
+    width: 50em;
+    height: 30em;
+  }
+  .btn {
+    margin: 25% 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header .navbar a {
+    font-size: 50%;
+  }
+  .carousel-item-custom {
+    width: 45em;
+    height: 25em;
+  }
+  .carousel {
+    width: 45em;
+    height: 25em;
+  }
+  .btn {
+    margin: 10% 39%;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .navbar a {
+    font-size: 40%;
+  }
+
+  .layout h2,
+  .props h2,
+  .backdrop h2 {
+    font-size: 4em;
+  }
+
+  .layout p,
+  .props p,
+  .backdrop p {
+    font-size: 2.5em;
+  }
+  .backdrop p {
+    font-size: 2em;
+  }
+
+  .carousel-item-custom {
+    width: 35em;
+    height: 25em;
+  }
+  .carousel {
+    width: 35em;
+    height: 25em;
+  }
+  .btn {
+    margin: 10% 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+  .header .logo {
+    width: 40%;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgb(141, 92, 92);
+    opacity: 0.8;
+    /* border-top: black; */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    font-size: 100%;
+  }
+
+  /* HOME START */
+
+  .main-home {
+    grid-template-rows: 30% 35% 38%;
+    grid-template-columns: 100%;
+    margin: 10px;
+  }
+
+  .home-logo {
+    width: 30em;
+    justify-self: center;
+  }
+
+  .home-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .home-subtitle {
+    padding-right: 0;
+    text-align: center;
+    font-size: 2em;
+  }
+  .phome {
+    font-size: 2em;
+    padding-right: 0;
+    text-align: justify;
+  }
+
+  .home-button {
+    padding: 0.4em 0.6em;
+    font-size: 2.5em;
+  }
+  /* ------HOME END----- */
+
+  /* -------NEW FEARTURED START------------------------- */
+  .new-feature {
+    grid-template-rows: 10% 20% 20% 20%;
+    grid-template-columns: 100%;
+  }
+
+  .new {
+    margin: 10% 0;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    justify-self: center;
+  }
+  .img180 {
+    margin: 40% 0;
+  }
+  .img360 {
+    margin: 60% 0;
+  }
+
+  /* -------NEW FEARTURED END------------------------- */
+  /* -------FEARTURED START------------------------- */
+  .featured-title {
+    grid-template-rows: 5% 30% 40% 40%;
+    grid-template-columns: 1fr;
+    /* padding: 0 60px; */
+    margin-top: -60%;
+  }
+
+  .props {
+    display: grid;
+    gap: 0;
+    /* gap: 50em; */
+  }
+  .props > .props-pic {
+    justify-self: center;
+  }
+
+  .props .props-pic img {
+    width: 100%;
+    width: 100%;
+    /* margin-left: 60px; */
+  }
+
+  .props h2 {
+    text-align: center;
+  }
+  .props p {
+    text-align: center;
+  }
+
+  .layout {
+    display: inline-block;
+  }
+
+  .layout h2,
+  .layout p {
+    text-align: center;
+  }
+
+  .layout > .layout-pic {
+    width: 143%;
+    height: 80%;
+    padding-top: 50px;
+  }
+
+  .backdrop {
+    display: inline-block;
+    text-align: center;
+  }
+  .backdrop img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5%;
+  }
+  .backdrop p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 30%;
+  }
+  .main-home {
+    grid-template-rows: 50% 25% 30%;
+  }
+
+  .carousel-item-custom {
+    width: 450px;
+    height: 250px;
+  }
+  .carousel {
+    width: 450px;
+    height: 250px;
+  }
+
+  .card-title {
+    font-size: 5em;
+  }
+  .card-text {
+    font-size: 4em;
+  }
+  .btn {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .new h2 {
+    font-size: 6em;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 20%;
+  }
+}
